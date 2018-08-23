@@ -19,7 +19,7 @@ var initializer = function() {
       dataType: 'json',
       headers : {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
       error: function() {
-        var errorMsg = 'Error: Update Unsuccessful';
+        var errorMsg = 'Error: There should be no more than 4 fixed items';
         alert(errorMsg);
       },
       success: function() {
